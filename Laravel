@@ -1,0 +1,13 @@
+COMMAND PROMPT  INI PAKE CARA COMPOSER (CARA LAIN PAKE INSTALLER SAMA VALET)
+1.	Tulis --> composer (enter)
+2.	Baca data nya --> ls (enter)
+3.	Tulis lagi  --> composer create-project laravel/laravel “nama folder”
+4.	Baca data nya  ls (enter) --> buat ngecek ada belumnya folder tersebut
+5.	Mengarahkan masuk ke folder --> cd “nama projek”
+6.	Menjalankan Laravel tanpa buka xampp --> php artisan serve
+ 
+
+7.	PS C:\Users\LENOVO\projekinf> cd.. --> balik ke direktori awal
+8.	Cek php --> php -v
+9.	Cek composer --> composer -v
+10.	 
