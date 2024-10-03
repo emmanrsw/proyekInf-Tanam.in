@@ -1,0 +1,16 @@
+Cara membuat tabel database di folder migrations:
+1. buka terminal di vs code
+2. ketikkan php artisan make:migration, lalu enter
+3. ketikkan nama tabelnya dgn format create_namatabel_table, example: create_pelanggans_table. lalu enter
+4. buka file create_pelanggans_table di folder migrations
+5. di bagian Schema::create('pelanggans', function (Blueprint $table) itu ditambahkan kolom2-nya.
+contoh kolom di tabel pelanggans :
+$table->bigIncrements('idCust'); // Kolom primary key dengan auto increment
+$table->string('namaCust', 255); // Kolom namaCust dengan tipe varchar(255)
+$table->string('alamatCust', 255); // Kolom alamatCust dengan tipe varchar(255)
+$table->string('emailCust', 255)->unique(); // Kolom emailCust dengan tipe varchar(255) dan unik
+$table->string('usernameCust', 20)->unique(); // Kolom usernameCust dengan tipe varchar(20) dan unik
+$table->string('passwordCust', 255); // Kolom passwordCust dengan tipe varchar(255)
+$table->string('notelp')->nullable(); // Kolom opsional, bisa dibiarkan kosong
+$table->string('gambarCust')->nullable(); // Kolom opsional untuk gambar profil
+6. kalau sudah di save lalu ke terminal, ketikkan php artisan migrate
